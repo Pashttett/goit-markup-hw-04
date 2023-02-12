@@ -5,10 +5,19 @@
   --color-brand: #404bbf;
   --color-min: #4d5ae5;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-secondary);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -19,7 +28,144 @@ a {
   color: var(--color-secondary);
 }
 
+/* Countainer */
+.countainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.page-countainer {
+  width: 1440px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+.contact-countainer {
+  display: flex;
+}
+.hero-countainer-button {
+  width: 1440px;
+  height: 600px;
+}
+
+.countainer-button {
+  width: 691px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-countainer-list {
+  width: 1128px;
+  height: 104px;
+  padding: 120px 0 120px 0;
+}
+
+.image-countainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1128px;
+  height: 412px;
+  align-items: center;
+}
+.our-team-countainer {
+  align-items: center;
+  width: 1440px;
+  height: 732px;
+}
+.footer-countainer {
+  width: 1440px;
+  height: 310px;
+}
+/* /Countainer */
+
+/*  Logo */
+
+.logotype-dark {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-min);
+  margin-left: 156px;
+}
+.studio-dark {
+  color: var(--color-primary);
+}
+.studio-white {
+  color: var(--color-white);
+}
+/* /Logo */
+
+/* menu */
+.page-nav {
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.menu-item {
+}
+.menu-list {
+}
+.menu-link {
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-primary);
+  gap: 40px;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--color-brand);
+}
+/* /menu */
+
 /* Components */
+
+.contacts {
+  margin-right: 156px;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+}
+/* Market */
+.market {
+  width: 1128px;
+  height: 420px;
+}
+.caption-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+}
+
+.text-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-secondary);
+}
+
+.market-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
+  padding-left: 0;
+}
+
+/* Button */
 .modal-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -34,8 +180,10 @@ a {
   background: var(--color-min);
   border: 2px solid var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
-  margin: 0 auto;
+  border-radius: 4px;
+  margin: 48px auto;
+  padding: 16px 32px;
+  display: block;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -53,101 +201,120 @@ a {
   color: var(--color-min);
   border: 2px solid var(--brand-color);
   border-radius: 2px;
-  margin: 0 auto;
+  margin: 48px auto;
   cursor: pointer;
 }
 .label-menu:hover,
-.modal-button:focus {
+.label-menu:focus {
   background-color: var(--color-brand);
   color: var(--color-white);
 }
-/* /Components */
-.logotype {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-min);
-}
-.studio-dark {
-  color: var(--color-primary);
-}
-.studio-white {
-  color: var(--color-white);
-}
 
-.list {
-  list-style: none;
-}
-.caption-list {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--color-primary);
-}
-.text-list {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-secondary);
-}
-.menu-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--color-brand);
-}
+/* Button */
+
+/* <!-- Address --> */
 .contact-phone-number {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.02em;
-  color: var(--color-secondary);
 }
 
 .contact-phone-number:hover,
 .contact-phone-number:focus {
   color: var(--color-brand);
 }
+/* <!-- Address --> */
+
+/* /Components */
+
+/* Hero */
+.hero {
+}
 .hero-title {
+  width: 1440px;
+  height: 600px;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   color: var(--color-white);
   background-color: var(--color-primary);
   text-align: center;
+  box-sizing: border-box;
+  padding: 188px 472px 292px 473px;
 }
+
 .title-work {
+  text-align: center;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--color-primary);
+  padding: 0 0 72px 0;
 }
+.list-work {
+  display: flex;
+  gap: 24px;
+}
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  align-items: center;
+}
+
 .title-team {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-primary);
+  margin: 72px;
+  padding: 120px 0 72px 0;
+}
+.our-team {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+}
+/* Hero */
+
+/* Footer */
+.logotype-light {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-min);
+  margin-left: 156px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-left: 156px;
 }
 .fotter {
   background-color: var(--color-primary);
 }
+
 .footter-list {
+  width: 264px;
+  height: 72px;
+  padding: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-white);
-  background-color: var(--color-primary);
 }
+/* /Footer */
