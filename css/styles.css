@@ -316,5 +316,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-white);
+  padding: 16px 1020px 100px 156px;
 }
 /* /Footer */
