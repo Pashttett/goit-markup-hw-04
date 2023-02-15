@@ -5,6 +5,9 @@
   --color-brand: #404bbf;
   --color-min: #4d5ae5;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-secondary);
@@ -30,13 +33,11 @@ a {
 
 /* Countainer */
 .countainer {
-  width: 100%;
-  max-width: 1440px;
+  width: 1158px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
 }
 .page-countainer {
-  width: 1440px;
-  height: 72px;
   display: flex;
   align-items: center;
 }
@@ -45,40 +46,29 @@ a {
 }
 .hero-countainer-button {
   width: 1440px;
-  height: 600px;
 }
 
 .countainer-button {
   width: 691px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 6px 14px 46px 14px;
 }
 
 .hero-countainer-list {
   width: 1128px;
-  height: 104px;
   padding: 120px 0 120px 0;
 }
 
 .image-countainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1128px;
-  height: 412px;
-  align-items: center;
+  width: 1160px;
 }
 .our-team-countainer {
-  align-items: center;
   width: 1440px;
-  height: 732px;
+  padding: 120px 0 120px 0;
 }
 .footer-countainer {
   width: 1440px;
-  height: 310px;
+  background-color: var(--color-primary);
+  padding: 100px 1020px 100px 156px;
 }
 /* /Countainer */
 
@@ -92,7 +82,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-min);
-  margin-left: 156px;
+  padding: 24px 0;
 }
 .studio-dark {
   color: var(--color-primary);
@@ -120,6 +110,7 @@ a {
   line-height: 1.5;
   color: var(--color-primary);
   gap: 40px;
+  display: block;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -129,12 +120,9 @@ a {
 
 /* Components */
 
-.contacts {
-  margin-right: 156px;
-}
-
 .list {
   list-style: none;
+  padding: 0;
 }
 /* Market */
 
@@ -144,18 +132,19 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-primary);
-  margin: 32px 0 0 0;
-  padding: 0 0 8px 0;
+  margin: 0 0 8px 0;
 }
-
+.about-team {
+  padding-top: 32px;
+}
 .text-list {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-secondary);
-  align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 32px;
+  flex-basis: calc((100% 72px) / 4);
 }
 
 .market-list {
@@ -164,6 +153,7 @@ a {
   flex-wrap: wrap;
   gap: 24px;
   padding-bottom: 120px;
+  box-sizing: border-box;
 }
 
 /* Button */
@@ -184,7 +174,6 @@ a {
   border-radius: 4px;
   margin: 48px auto;
   padding: 16px 32px;
-  display: block;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -232,17 +221,19 @@ a {
 
 /* Hero */
 .hero {
+  width: 1440px;
+  padding: 188px 0;
+  margin: 0 auto;
+  background-color: var(--color-primary);
 }
 .hero-title {
-  width: 1440px;
-  height: 600px;
+  width: 494px;
   font-size: 56px;
   line-height: 1.07;
   color: var(--color-white);
-  background-color: var(--color-primary);
   text-align: center;
   box-sizing: border-box;
-  padding: 188px 472px 292px 473px;
+  margin: 0 auto;
 }
 
 .title-work {
@@ -250,7 +241,6 @@ a {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--color-primary);
   padding: 0 0 72px 0;
 }
@@ -260,10 +250,7 @@ a {
 }
 .works {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
-  padding: 0;
-  align-items: center;
 }
 
 .title-team {
@@ -272,10 +259,8 @@ a {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--color-primary);
-  margin: 72px;
-  padding: 120px 0 72px 0;
+  padding-bottom: 72px;
 }
 .our-team {
   text-align: center;
@@ -297,25 +282,15 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-min);
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  padding-top: 100px;
-  padding-left: 156px;
-}
-.fotter {
-  background-color: var(--color-primary);
 }
 
 .footter-list {
   width: 264px;
-  height: 72px;
-  padding: 19px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  padding: 16px 1020px 100px 156px;
+  padding-top: 16px;
 }
 /* /Footer */
