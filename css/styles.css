@@ -4,6 +4,8 @@
   --color-white: #fff;
   --color-brand: #404bbf;
   --color-min: #4d5ae5;
+  --background-clr: #e5e5e5;
+  --border-color: #e7e9fc;
 }
 * {
   box-sizing: border-box;
@@ -11,6 +13,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-secondary);
+  background-color: var(--background-clr);
 }
 p,
 h1,
@@ -21,6 +24,9 @@ h5,
 h6,
 ul {
   margin: 0;
+}
+ul {
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -38,6 +44,11 @@ a {
   padding: 0 15px 0 15px;
 }
 .page-countainer {
+  background: #e7e9fc;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: flex;
   align-items: center;
 }
@@ -45,32 +56,39 @@ a {
   display: flex;
 }
 .hero-countainer-button {
-  width: 1440px;
 }
-
 .countainer-button {
-  width: 691px;
-  padding: 6px 14px 46px 14px;
 }
 
 .hero-countainer-list {
-  width: 1128px;
-  padding: 120px 0 120px 0;
 }
 
 .image-countainer {
   width: 1160px;
 }
 .our-team-countainer {
-  width: 1440px;
-  padding: 120px 0 120px 0;
 }
 .footer-countainer {
-  width: 1440px;
   background-color: var(--color-primary);
-  padding: 100px 1020px 100px 156px;
 }
 /* /Countainer */
+/* Section */
+
+.team {
+  padding: 120px 0 120px 0;
+}
+.text {
+  padding: 120px 0 120px 0;
+}
+.footer {
+  padding: 100px 0px;
+  background-color: #2e2f42;
+}
+.button-portfolio {
+  padding-bottom: 120px;
+}
+
+/* Section */
 
 /*  Logo */
 
@@ -96,9 +114,13 @@ a {
 .page-nav {
   display: flex;
   flex-grow: 1;
+  gap: 76px;
+}
+.page-nav-list {
+  display: flex;
+  flex-grow: 1;
   gap: 40px;
 }
-
 .menu-item {
 }
 .menu-list {
@@ -124,6 +146,12 @@ a {
   list-style: none;
   padding: 0;
 }
+.button-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 98px 0 70px 0;
+}
 /* Market */
 
 .caption-list {
@@ -136,26 +164,34 @@ a {
 }
 .about-team {
   padding-top: 32px;
+  padding-bottom: 32px;
 }
-.text-list {
+F4F4FD .text-list {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-secondary);
-  padding-bottom: 32px;
+}
+.our-team-list {
   flex-basis: calc((100% 72px) / 4);
 }
-
 .market-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
-  padding-bottom: 120px;
   box-sizing: border-box;
 }
-
+.market {
+  border: 1px solid var(--accent-clr);
+  flex-basis: calc((100% - 48px) / 3);
+}
+.text-market {
+  padding: 32px 0px 32px 16px;
+  border: 1px solid var(--accent-clr);
+  border-top: 1px solid transparent;
+}
 /* Button */
 .modal-button {
   font-family: "Roboto", sans-serif;
@@ -187,12 +223,12 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  align-items: center;
   color: var(--color-min);
-  border: 2px solid var(--brand-color);
-  border-radius: 2px;
   padding: 12px 24px;
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  justify-content: center;
 }
 .label-menu:hover,
 .label-menu:focus {
@@ -242,7 +278,7 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--color-primary);
-  padding: 0 0 72px 0;
+  margin: 0 0 72px 0;
 }
 .list-work {
   display: flex;
@@ -261,6 +297,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--color-primary);
   padding-bottom: 72px;
+  background-color: #f4f4fd;
 }
 .our-team {
   text-align: center;
@@ -271,6 +308,13 @@ a {
   padding: 0;
   justify-content: center;
 }
+.our-team-box {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+/*  */
 /* Hero */
 
 /* Footer */
@@ -282,15 +326,16 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-min);
+  display: block;
+  margin-bottom: 16px;
 }
 
 .footter-list {
-  width: 264px;
+  width: 287px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  padding-top: 16px;
 }
 /* /Footer */
