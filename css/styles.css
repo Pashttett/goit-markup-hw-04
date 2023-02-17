@@ -64,6 +64,9 @@ a {
 
 .hero-countainer-list {
 }
+.countainer-market {
+  padding: 0;
+}
 
 .image-countainer {
   width: 1160px;
@@ -185,6 +188,7 @@ a {
   flex-basis: calc((100% 72px) / 4);
 }
 .market-list {
+  align-items: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -192,8 +196,10 @@ a {
   row-gap: 32px;
 }
 .market {
-  box-sizin
-  border: 1px solid #e7e9fc;
+  background: #ffffff;
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .text-market {
   padding: 32px 0px 32px 16px;
