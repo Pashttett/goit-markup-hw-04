@@ -10,6 +10,8 @@
   --icons-color: #afb1b8;
   --customers-clr: #8e8f99;
   --icons-team: #4d5ae5;
+  --icons-text: #f4f4fd;
+  --icons-footer: #31d0aa;
 }
 * {
   box-sizing: border-box;
@@ -49,7 +51,7 @@ a {
   list-style: none;
   padding: 0;
 }
-.countainer {
+.container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
@@ -60,11 +62,13 @@ a {
 }
 
 /* PAGE */
-.page-countainer {
+.header {
   background-color: var(--color-white);
   border-bottom: 1px solid var(--border-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.page-countainer {
   display: flex;
   align-items: center;
 }
@@ -174,6 +178,7 @@ a {
 /* MENU*/
 
 /* HERO*/
+
 /* LOGOTYPE DARK */
 .logotype-dark {
   font-family: "Raleway", sans-serif;
@@ -213,7 +218,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .hero-title {
   width: 494px;
@@ -302,6 +306,8 @@ a {
 }
 /* ICONS-TEXT */
 .icons-text-countainer {
+  background-color: var(--icons-text);
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -311,11 +317,8 @@ a {
 }
 
 .icons-text {
-  display: flex;
   width: 64px;
   height: 64px;
-  justify-content: center;
-  align-items: center;
 }
 
 /* ICONS-TEXT */
@@ -381,12 +384,9 @@ a {
   margin-bottom: 32px;
 }
 .icons-team {
-  color: var(--color-white);
-  fill: currentColor;
+  fill: var(--color-white);
   height: 16px;
   width: 16px;
-  display: block;
-  background-color: var(--icons-team);
 }
 
 .icon-list {
@@ -401,16 +401,19 @@ a {
   width: 40px;
 }
 
-.icons-adress {
+.icons-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--color-primary);
+  background-color: var(--icons-team);
   width: 100%;
   height: 100%;
-  background-color: var(--icons-team);
   border-radius: 50%;
 }
-
+.icon-li:hover .icons-link {
+  background-color: var(--color-brand);
+}
 /* ICONS-TEAM */
 
 /* TEAM */
@@ -437,13 +440,8 @@ a {
 }
 
 .customers-list {
-  margin: 0 auto;
-  height: 88px;
-  width: 1128px;
   gap: 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .customer {
@@ -452,8 +450,6 @@ a {
 }
 
 .adress-customers {
-  fill: currentColor;
-  fill: var(--customers-clr);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -464,17 +460,51 @@ a {
 }
 
 .icons-customers {
+  fill: var(--customers-clr);
   height: 56px;
   width: 104px;
+}
+.customer {
+  height: 88px;
+  width: 168px;
+}
+
+.adress-customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--customers-clr);
+  border-radius: 4px;
+}
+
+.icons-customers {
+  fill: var(--customers-clr);
+  height: 56px;
+  width: 104px;
+}
+
+.adress-customers:hover {
+  border: 1px solid var(--color-brand);
+  border-radius: 4px;
+}
+
+.adress-customers:hover .icons-customers {
+  fill: var(--color-brand);
 }
 
 /* CUSTOMER */
 
 /* Footer */
 
-.footer-countainer {
-  margin: 0 auto;
-  padding: 0;
+.footer-container {
+  display: flex;
+  background-color: var(--color-primary);
+}
+.footer {
+  display: flex;
+  padding: 100px 0px;
   background-color: var(--color-primary);
 }
 
@@ -499,18 +529,6 @@ a {
   color: var(--color-white);
 }
 
-.footer {
-  width: 100%;
-  padding: 100px 0px;
-  display: flex;
-  background-color: var(--color-primary);
-}
-
-.footer-row {
-  width: 264px;
-  height: 110px;
-}
-
 /* ICONS-FOOTER */
 .social-footer {
   font-family: "Roboto";
@@ -526,7 +544,7 @@ a {
 .footer-icons {
   height: 80px;
   width: 208px;
-  margin: 0 auto;
+  margin: 0 0 0 120px;
   padding: 0;
 }
 
@@ -535,7 +553,6 @@ a {
   width: 208px;
   display: flex;
   gap: 16px;
-  padding: 0 0 130px 0;
 }
 
 .footer-content {
@@ -560,6 +577,9 @@ a {
   width: 24px;
   display: block;
 }
+.footer-adress:hover {
+  background-color: var(--icons-footer);
+}
 /* ICONS-FOOTER */
 
 .studio-white {
@@ -569,4 +589,5 @@ a {
 .portfolio {
   padding: 92px 0 120px 0;
 }
+
 /* /Footer */
