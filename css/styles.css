@@ -411,7 +411,11 @@ a {
   height: 100%;
   border-radius: 50%;
 }
+
 .icons-link:focus {
+  background-color: #404bbf;
+}
+.icons-link:hover {
   background-color: #404bbf;
 }
 /* ICONS-TEAM */
