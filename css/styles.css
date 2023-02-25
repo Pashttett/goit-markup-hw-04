@@ -75,7 +75,7 @@ a {
 .page-nav {
   display: flex;
   flex-grow: 1;
-  gap: 76px;
+  gap: 70px;
 }
 .page-nav-list {
   display: flex;
@@ -229,9 +229,12 @@ a {
 
 /* CONTACT */
 .contact-countainer {
-  display: flex;
 }
 
+.contacts {
+  display: flex;
+  gap: 40px;
+}
 /* CONTACT */
 
 /* BUTTON */
@@ -499,6 +502,7 @@ a {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
   background-color: var(--color-primary);
 }
 .footer {
